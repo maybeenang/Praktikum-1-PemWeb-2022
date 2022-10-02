@@ -9,6 +9,13 @@
       * {
         scroll-behavior: smooth;
       }
+      table {
+        border: 1px solid black;
+      }
+      td,
+      th {
+        border: 1px solid black;
+      }
     </style>
   </head>
   <body>
@@ -27,7 +34,7 @@
 
     <main>
       <article id="tentang">
-        <h1>Tentang saya</h1>
+        <h2>Tentang saya</h2>
         <p>
           Nama saya Muhammad Elang Permadani, sekarang saya sedang belajar HTML.
           Saya sangat suka dengan teknologi dan saya ingin menjadi seorang
@@ -40,8 +47,6 @@
             height="200"
             src="https://www.youtube.com/embed/FSOSgkzh_t0"
             title="YouTube video player"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowfullscreen
           ></iframe>
           <figcaption>Video saya</figcaption>
@@ -49,9 +54,9 @@
       </article>
 
       <article id="pengalaman">
-        <h1>Pengalaman</h1>
+        <h2>Pengalaman</h2>
 
-        <table border="1">
+        <table>
           <thead>
             <tr>
               <th rowspan="2">No</th>
@@ -81,63 +86,56 @@
       </article>
 
       <article id="hubungi">
-        <h1>Hubungi saya</h1>
-        <form action="">
-          <section>
-            <label for="nama">Nama : </label>
-            <input type="text" /><br /><br />
-          </section>
-          <section>
-            <label for="kenal">Jenis Kelamin</label>
-            <br />
-            <input
-              type="radio"
-              name="jenis_kelamin"
-              value="laki-laki"
-              id="laki"
-            />
-            <label for="laki">Laki-Laki</label><br />
-            <input
-              type="radio"
-              name="jenis_kelamin"
-              value="perempuan"
-              id="perempuan"
-            />
-            <label for="perempuan">Perempuan</label><br /><br />
-          </section>
+        <h2>Hubungi saya</h2>
+        <form action="get">
+          <label for="nama">Nama : </label>
+          <input type="text" name="nama" id="nama" /><br /><br />
 
-          <section>
-            <label
-              >Pilih media sosial jika ingin berinteraksi dengan saya</label
-            >
-            <br />
-            <input
-              type="checkbox"
-              name="media_sosial"
-              value="facebook"
-              id="facebook"
-            />
-            <label for="facebook">Facebook</label><br />
-            <input
-              type="checkbox"
-              name="media_sosial"
-              value="twitter"
-              id="twitter"
-            />
-            <label for="twitter">Twitter</label><br />
-            <input
-              type="checkbox"
-              name="media_sosial"
-              value="instagram"
-              id="instagram"
-            />
-            <label for="instagram">Instagram</label><br />
-          </section>
-          <section>
-            <label for="pesan">Pesan : </label>
-            <br />
-            <textarea name="pesan" id="pesan" cols="30" rows="10"></textarea>
-          </section>
+          <p>Jenis Kelamin</p>
+          <br />
+          <input
+            type="radio"
+            name="jenis_kelamin"
+            value="laki-laki"
+            id="laki"
+          />
+          <label for="laki">Laki-Laki</label><br />
+          <input
+            type="radio"
+            name="jenis_kelamin"
+            value="perempuan"
+            id="perempuan"
+          />
+          <label for="perempuan">Perempuan</label><br /><br />
+
+          <label>Pilih media sosial jika ingin berinteraksi dengan saya</label>
+          <br />
+          <input
+            type="checkbox"
+            name="media_sosial"
+            value="facebook"
+            id="facebook"
+          />
+          <label for="facebook">Facebook</label><br />
+          <input
+            type="checkbox"
+            name="media_sosial"
+            value="twitter"
+            id="twitter"
+          />
+          <label for="twitter">Twitter</label><br />
+          <input
+            type="checkbox"
+            name="media_sosial"
+            value="instagram"
+            id="instagram"
+          />
+          <label for="instagram">Instagram</label><br /><br />
+
+          <label for="pesan">Pesan : </label>
+          <br />
+          <textarea name="pesan" id="pesan" cols="30" rows="10"></textarea>
+
           <br />
           <input type="submit" value="Kirim" />
         </form>
